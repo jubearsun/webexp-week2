@@ -1,0 +1,133 @@
+/* Navbar */
+
+.nav {
+   	padding: .3em 0 .3em 0; 
+   	background: #ffffff; 
+   	width: 100%; 
+   	height: 10%;
+   	z-index: 4;
+   	position:fixed;
+   	box-shadow: 0 0 4px 1px #ddd;
+}
+
+.nav ul li {
+	display:inline;
+	text-decoration:none;
+	padding: 0 20px;
+	font-family: "Montserrat", sans-serif;
+	font-size: 20px;
+}
+
+.nav ul li:link {
+	display:inline;
+	text-decoration:none;
+	color: #fff
+}
+
+.nav ul li:hover {
+	display:inline;
+	text-decoration: line-through;
+	-webkit-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    transition: all .2s linear;
+    color: #0592BF;
+    cursor: pointer;
+}
+
+.navbar {
+	display:inline-block;
+	margin-left:4%;
+	@include vertical-align();
+}
+
+#title {
+	color: #0592BF;
+}
+
+#title:hover {
+	text-decoration:none;
+	color: #000;
+	cursor: default;
+	color: #0592BF;
+}
+
+/* About */
+
+.about-container {
+	font-size: 40px;
+	width:95%;
+	padding:5%;
+	font-family: "Roboto SLab", sans-serif;
+	top: 20%;
+	position:relative;
+	line-height: 60px;
+	@include horizontal-align();
+}
+
+.web {
+	text-align:center;
+	margin:10% 0 10% 0;
+	font-family: "Roboto Slab", sans-serif;
+}
+
+/* Pictures */
+
+.picture-container {
+	padding-top: 10%;
+}
+
+ul.img-list {
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+ul.img-list li {
+    display: inline-block;
+    margin: 0 1em 1em 0;
+    position: relative;
+}
+
+/* Members */
+
+.member-container {
+	padding: 10%;
+}
+
+.img-circular img {
+	width: 500px;
+	height: 500px;
+	border-radius: 250px;
+	-webkit-border-radius: 250px;
+	-moz-border-radius: 250px;
+	background: url(http://link-to-your/image.jpg) no-repeat;
+	box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	opacity: 0.6;
+}
+
+.img-circular img:hover {
+	opacity: 1;
+	-webkit-transition: opacity 500ms;
+    -moz-transition: opacity 500ms;
+    -o-transition: opacity 500ms;
+    transition: opacity 500ms;
+}
+
+ul.img-circular {
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+ul.img-circular li {
+	display: inline-block;
+    margin: 0 1em 1em 0;
+    position: relative;
+    margin: 3%;
+}
+
